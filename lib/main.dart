@@ -7,6 +7,7 @@ const request = "https://api.hgbrasil.com/finance?key=09526d9f";
 void main() async {
   runApp(
     MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Home(),
       theme: ThemeData(
         hintColor: Colors.amber,
@@ -78,6 +79,7 @@ class _HomeState extends State<Home> {
     return Scaffold(
       backgroundColor: Colors.black12,
       appBar: AppBar(
+        centerTitle: true,
         title: Text("\$ Conversor \$"),
         backgroundColor: Colors.amber,
       ),
